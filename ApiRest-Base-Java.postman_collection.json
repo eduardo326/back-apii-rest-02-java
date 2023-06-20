@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "1d62260a-d262-4873-8584-43dfa0b92b8d",
+		"name": "ApiRest-Base-Java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20681506"
+	},
+	"item": [
+		{
+			"name": "Writers consultar lista",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/writers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"writers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Writers guardar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Daniel\",\r\n        \"lastName\": \"Guzmán\",\r\n        \"books\": [\r\n            {\r\n                \"title\": \"Harry Poter\",\r\n                \"description\": \"Libro de fantasia majica\",\r\n                \"publicationDate\": \"2022-03-06T05:00:00.000+00:00\"\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/writers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"writers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
