@@ -50,6 +50,134 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Equipos consultar lista Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/writers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"writers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Equipos consultar Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/equipos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"equipos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Equipos guardar Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numeroSerial\": \"NB152CD123\",\r\n    \"descripcion\": \"Equipo de computo para el departamento de recursos humanos\",\r\n    \"nombre\": \"Portatil Lenovo T14\",\r\n    \"fechaCompra\":\"2023-07-09T05:00:00.000+00:00\",\r\n    \"valorCompra\":\"2500000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/equipos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"equipos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Equipos actualizar Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"numeroSerial\": \"NB152CD124\",\r\n    \"descripcion\": \"Equipo de computo para el departamento de RH\",\r\n    \"nombre\": \"Portatil Lenovo T14\",\r\n    \"fechaCompra\":\"2023-07-09T05:00:00.000+00:00\",\r\n    \"valorCompra\":\"2500000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/equipos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"equipos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Equipos eliminar Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/equipos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"equipos",
+						"1"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
